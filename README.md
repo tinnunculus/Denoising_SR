@@ -5,8 +5,8 @@
 ![image](https://user-images.githubusercontent.com/36150943/91537587-8028c600-e951-11ea-817d-eee18bee4481.png)
 ![image](https://user-images.githubusercontent.com/36150943/91537537-68e9d880-e951-11ea-9a12-6b6ec8c4e214.png)
 > __Abstract__: _this model based on [DnResnet](https://ieeexplore.ieee.org/document/8575286), [EDSR](https://arxiv.org/abs/1707.02921), [DBPN](https://arxiv.org/abs/1803.02735)
-to solve noised super resolution problem. first of all, we trained EDSR model with not noised low resolution images, and then its pretrained model used for solving denoising 
-problem by transfering trained parameters. in denoising phase, we used several data preprocessing method like unsharp filter to solve blurry outputs. the DnResnet independently trained to eliminate noises. then the outputs that were low resolution images with no noise
+to solve noised super resolution problem. first of all, we trained EDSR model with no noised low resolution images, and then its pretrained model used for solving denoising 
+problem by transfering trained parameters. in denoising phase, we used several data preprocessing method like unsharp filter method to solve blurry outputs. the DnResnet independently trained to eliminate noises. then the outputs that were low resolution images with no noise
 inputed to EDSR module. we used shuffle method not deconvolution for upsampling in EDSR and BackProjection module._
 
 
